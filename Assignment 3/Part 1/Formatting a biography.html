@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<!--
+Name: Nelvin Joy
+File: Formatting a biography.html
+Date: 21 June 2024
+This HTML document has a biographical format. It has sections including paragraphs, headings, and a list of contact information. The fonts, colours, and spacing of these elements can be modified using 
+the CSS styles defined in the <style> tag.
+
+Important stylistic decisions include of:
+-Changing the primary heading's (<h1>) border style and colour
+-Creating headers at level two (<h2>) italicised
+-Using a distinct font weight and colour for the job title
+-Specifying hyperlink hover effects and link colours (<a>)
+-Adding padding, border, and background colour to the contact details list (<ul>)
+Overall, the code shows how CSS may improve HTML content's visual display and make it easier to understand and more aesthetically pleasing.
+	--> 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Formatting a biography</title>
+    <style>
+      body {
+        background-color: chartreuse;
+        color: #333;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      h1 {
+        color: red; 
+        font-size: 2em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-bottom: 10px dotted cyan; 
+      }
+
+      h2 {
+        font-size: 1.5em;
+        font-style: italic; 
+      }
+
+      .job-title {
+        color: brown;
+        font-weight: bold;
+      }
+
+      a:link,
+      a:visited {
+        color: blue;
+      }
+
+      a:hover {
+        color: violet; 
+        text-decoration: none;
+      }
+
+      ul.contact-details { 
+        background-color: red;
+        border: 5px solid cyan;
+        padding: 1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Jane Doe</h1>
+    <div class="job-title">Web Developer</div>
+    <p>
+      Far far away, behind the word mountains, far from the countries Vokalia
+      and Consonantia, there live the blind texts. Separated they live in
+      Bookmarksgrove right at the coast of the Semantics, a large language
+      ocean.
+    </p>
+
+    <p>
+      A small river named Duden flows by their place and supplies it with the
+      necessary regelialia. It is a paradisematic country, in which roasted
+      parts of sentences fly into your mouth.
+    </p>
+
+    <h2>Contact information</h2>
+    <ul class="contact-details"> 
+      <li>
+        Email:
+        <a href="mailto:jane@example.com">jane@example.com</a>
+      </li>
+      <li>
+        Web:
+        <a href="https://example.com">https://example.com</a>
+      </li>
+      <li>Tel: 123 45678</li>
+    </ul>
+  </body>
+</html>

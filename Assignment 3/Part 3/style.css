@@ -1,0 +1,167 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+  @font-face {
+    font-family: 'Merriweather';
+    src: url('Merriweather-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.ttf'); 
+  }
+  
+  body {
+    font-family: 'Merriweather', serif; 
+    font-size: 10px; 
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif; 
+  }
+  
+  /* General text styling */
+  
+  body {
+    line-height: 1; 
+  }
+  
+  h1 {
+    font-size: 4em; 
+    text-align: center; 
+    letter-spacing: 0.05em; 
+  }
+  
+  h2 {
+    font-size: 3em; 
+    letter-spacing: 0.05em; 
+  }
+  
+  p {
+    letter-spacing: 0.01em; 
+    word-spacing: 0.05em; 
+  }
+  
+  section p:first-child {
+    text-indent: 15px; 
+  }
+  
+  /* Links */
+  
+  a {
+    text-decoration: underline; 
+    color: #337ab7; 
+  }
+  
+  a:visited {
+    color: #337ab7; 
+  }
+  
+  a:focus {
+    text-decoration: none; 
+    outline: none; 
+  }
+  
+  a:hover {
+    text-decoration: none; 
+    color: #23527c; 
+  }
+  
+  a:active {
+    color: #23527c; 
+    background-color: #f5f5f5; 
+  }
+  
+  a[href^="http"]:not([href*="st-huxleys.com"]) {
+    padding-right: 20px; 
+  }
+  
+  /* Lists */
+  
+  ul, ol {
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  li {
+    line-height: 2; 
+    margin-bottom: 10px; 
+  }
+  
+  ul {
+    list-style: disc; 
+  }
+  
+  /* Navigation menu */
+  
+  nav ul {
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+  }
+  
+  nav li {
+    margin-bottom: 10px; 
+  }
+  
+  nav a {
+    text-decoration: none; 
+    color: #337ab7; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    display: inline-block; 
+  }
+  
+  nav a:hover {
+    color: #23527c; 
+    border-color: #23527c; 
+    background-color: #f5f5f5; 
+  }
+  
+  nav a:active {
+    background-color: #337ab7;
+    color: #fff; 
+  }
