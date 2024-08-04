@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!--
+Name: Nelvin Joy
+File: index.html
+Date: 3 August 2024
+This piece of HTML code creates a basic webpage for a "Silly Story Generator." Here's a quick synopsis:
+
+Declaration of Document Type: It identifies HTML5 as the document type.
+Language Declaration: English (United States) is the language used in this work.
+
+Head Section: This section includes metadata about the webpage, viewport settings, and character encoding.
+Styling: The elements are styled using inline CSS. It establishes the body width, font family, and styles for paragraphs, input fields, and labels.
+Body: Has a number of components that allow for user interaction:
+Users can input a custom name in the "Enter custom name" input form (input>).
+The "US" and "UK" radio buttons (<input type="radio">) allow you to choose the location of the tale.
+To create a random tale, assign the class "randomise" to a button (<button>).
+A paragraph (<p>) element that has the class "story" applied will show the created narrative. Its visibility is initially set to hidden.
+Screenplay: At the bottom of the body, there is a link to the JavaScript file "main.js". The algorithm to create random stories based on user inputs is probably present in this script.
+
+The silly story generator webpage's general structure and functions are established by this HTML.
+	-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Silly story generator</title>
+    <style>
+      body {
+        font-family: helvetica, sans-serif;
+        width: 350px;
+      }
+      label {
+        font-weight: bold;
+      }
+      div {
+        padding-bottom: 20px;
+      }
+      input[type="text"] {
+        padding: 5px;
+        width: 150px;
+      }
+      p {
+        background: #ffc125;
+        color: #5e2612;
+        padding: 10px;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" placeholder="" />
+    </div>
+    <div>
+      <label for="us">US</label>
+      <input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label>
+      <input id="uk" type="radio" name="ukus" value="uk" />
+    </div>
+    <div>
+      <button class="randomize">Generate random story</button>
+    </div>
+    <p class="story"></p>
+    <script src="main.js"></script>
+  </body>
+  </html>

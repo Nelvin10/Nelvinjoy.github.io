@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<!--
+Name: Nelvin Joy
+File: index.html
+Date: 3 August 2024
+This JavaScript code improves a webpage's image gallery capability. Images and alt text are dynamically loaded from an array of image filenames. Thumbnail images are created and added to the thumbBar element.
+ Additionally, it configures event listeners to update the displayed image and its alt text in response to the click of a thumbnail image. It also includes a Darken/Lighten option that allows you to adjust
+  the overlay's background colour to make the displayed image appear dimmer.
+	-->
+  <head>
+    <meta charset="utf-8">
+
+    <title>Image gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+    <h1>Image gallery example</h1>
+
+    <div class="full-img">
+      <img class="displayed-img" src="images/pic1.jpg" alt="Closeup of a human eye">
+      <div class="overlay"></div>
+      <button class="dark">Darken</button>
+    </div>
+
+    <div class="thumb-bar">
+
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
